@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Van-Oost/que_veo_hoy#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
   }
 }
