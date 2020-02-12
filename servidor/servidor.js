@@ -8,16 +8,20 @@ var app = express();
 
 app.use(cors());
 
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(bodyParser.urlencoded({ extended: true}));
+
+app.use(bodyParser.json());
 
 app.get("/peliculas", controlador.peliculas);
 
-app.get("/genero", controlador.genero);
+app.get("/generos", controlador.generos);
+
+app.get("/peliculas/recomendacion", controlador.recomendar);
+
+app.get("/peliculas/:id", controlador.idPelicula);
 
 
-app.use(bodyParser.json());
+
 
 var puerto = '8080';
 
